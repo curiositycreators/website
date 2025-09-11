@@ -250,7 +250,9 @@ function ChartTooltipContent({
 
 const ChartLegend = RechartsPrimitive.Legend
 
-type ChartLegendContentProps = Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
+type ChartLegendContentProps = {
+  payload?: Array<any> // the payload from the chart
+  verticalAlign?: "top" | "bottom" | "middle"
   className?: string
   hideIcon?: boolean
   nameKey?: string
