@@ -117,17 +117,17 @@ import { cn } from "@/lib/utils"
 // }
 
 // Stub for getPayloadConfigFromPayload
-export const getPayloadConfigFromPayload = (
-  config: Record<string, any>,
-  item: any,
-  key: string
-) => {
-  // Just return default label and no icon
-  return {
-    label: item.name || key,
-    icon: null // you can return a React component here later if needed
-  }
-}
+// export const getPayloadConfigFromPayload = (
+//   config: Record<string, any>,
+//   item: any,
+//   key: string
+// ) => {
+//   // Just return default label and no icon
+//   return {
+//     label: item.name || key,
+//     icon: null // you can return a React component here later if needed
+//   }
+// }
 
 type ChartTooltipContentProps<ValueType = any, NameType = any> = {
   active?: boolean
