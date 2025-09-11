@@ -110,11 +110,11 @@ import { cn } from "@/lib/utils"
 // import { useChart, getPayloadConfigFromPayload } from "@/lib/utils"
 
 // Stub for useChart hook
-export const useChart = () => {
-  return {
-    config: {} // empty config for now
-  }
-}
+// export const useChart = () => {
+//   return {
+//     config: {} // empty config for now
+//   }
+// }
 
 // Stub for getPayloadConfigFromPayload
 export const getPayloadConfigFromPayload = (
