@@ -107,7 +107,7 @@ const ChartTooltip = RechartsPrimitive.Tooltip
 import React from "react"
 import { TooltipProps } from "recharts"
 import { cn } from "@/lib/utils"
-import { useChart, getPayloadConfigFromPayload } from "@/lib/chart"
+import { useChart, getPayloadConfigFromPayload } from "@/lib/utils"
 
 type ChartTooltipContentProps<ValueType = any, NameType = any> = {
   active?: boolean
