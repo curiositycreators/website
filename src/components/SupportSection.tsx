@@ -33,7 +33,7 @@ const sponsorshipFormSchema = z.object({
 
 const newsletterFormSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
-  ageGroup: z.boolean().default(false),
+  ageGroup: z.boolean(),
   consent: z.boolean().refine((val) => val === true, "Please consent to receive updates"),
 });
 
