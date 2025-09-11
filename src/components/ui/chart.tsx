@@ -109,26 +109,6 @@ import { TooltipProps } from "recharts"
 import { cn } from "@/lib/utils"
 // import { useChart, getPayloadConfigFromPayload } from "@/lib/utils"
 
-// Stub for useChart hook
-// export const useChart = () => {
-//   return {
-//     config: {} // empty config for now
-//   }
-// }
-
-// Stub for getPayloadConfigFromPayload
-// export const getPayloadConfigFromPayload = (
-//   config: Record<string, any>,
-//   item: any,
-//   key: string
-// ) => {
-//   // Just return default label and no icon
-//   return {
-//     label: item.name || key,
-//     icon: null // you can return a React component here later if needed
-//   }
-// }
-
 type ChartTooltipContentProps<ValueType = any, NameType = any> = {
   active?: boolean
   payload?: Array<any>
@@ -145,7 +125,7 @@ type ChartTooltipContentProps<ValueType = any, NameType = any> = {
   labelKey?: string
 }
 
-export function ChartTooltipContent({
+function ChartTooltipContent({
   active,
   payload,
   className,
